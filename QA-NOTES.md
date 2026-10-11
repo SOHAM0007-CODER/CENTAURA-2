@@ -74,3 +74,7 @@ Latest offline package: `deliverables/CENTAURA-OFFLINE-DEMO-V5.zip`.
 - Proof: `deliverables/home-aura-studio-v6.png` and `deliverables/story-grid-mobile-v6.png`.
 - No frame-rate benchmark or commercial backend verification was performed.
 - Latest handoff: `deliverables/CENTAURA-OFFLINE-DEMO-V6.zip`.
+
+## Aura Guide and logo update
+
+TypeScript and Vite production build passed after integrating the local prepared-answer guide and supplied official logo. No new dependency or test suite was added. No browser interaction checks were run for this update.

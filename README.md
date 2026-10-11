@@ -116,3 +116,11 @@ Latest package: `deliverables/CENTAURA-OFFLINE-DEMO-V5.zip`, including the clean
 The homepage now uses the same five premium Aura Language studies as the dedicated page. Our Story's twelve touchpoints use shrinkable grid tracks and one column on phones, fixing the horizontal overflow and cropped mockups.
 
 **Current handoff: `deliverables/CENTAURA-OFFLINE-DEMO-V6.zip`.** Extract the ZIP, run `START-DEMO.cmd` with Node.js installed, and keep its terminal open. Earlier packages are snapshots. Presentation checklist: `PPT-CHECKLIST.md`.
+
+## Aura Guide and official logo
+
+The website now uses the supplied gold-and-plum CENTAURA logo in the header, mobile navigation and footer. Original artwork is preserved.
+
+The floating Aura Guide uses the supplied mascot and eight prepared question topics, with a guided fragrance suggestion and links to the relevant pages. Answers come from local content and shared product pricing; no API key, external request or conversation storage is used. Its six-second float moves five pixels, pauses while open, hovered or hidden, and disables for reduced-motion preferences.
+
+The current GitHub source and rebuilt dist include this update. The V6 offline ZIP is an earlier snapshot and does not contain the guide or official logo update.
