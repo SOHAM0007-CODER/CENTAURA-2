@@ -1,0 +1,127 @@
+/* Product detail, loading and interaction refinements. */
+.hero[data-scene]>.hero-photo,.hero[data-scene]>.hero-bracelet-photo{animation:none;transform:scale(1.01);transition:opacity .8s ease,transform 8s linear;will-change:opacity}
+.hero[data-scene="0"]>.hero-photo,.hero[data-scene="1"]>.hero-bracelet-photo{opacity:1;transform:scale(1.025)}
+.hero[data-scene="1"]>.hero-photo,.hero[data-scene="0"]>.hero-bracelet-photo{opacity:0}
+.hero-scene-controls{display:flex;align-items:center;gap:13px;font-size:9px;letter-spacing:.03em}
+.hero-scene-controls button{font-size:9px;color:#dfd0de;padding:8px 0;border-bottom:1px solid transparent}
+.hero-scene-controls button[aria-pressed=true]{color:var(--cream);border-color:currentColor}
+.hero-scene-controls>.hero-scene-pause{border:1px solid #f7f0e935;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0;margin-left:6px}
+.packaging-editorial{display:grid;grid-template-columns:1.2fr 1fr;background:var(--cream)}
+.packaging-editorial>img{width:100%;height:100%;min-height:500px;object-fit:cover}
+.packaging-editorial>div{padding:85px var(--gutter);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.packaging-editorial p{max-width:360px;font-size:13px;color:var(--muted);margin-top:25px}
+.packaging-editorial .text-link{margin-top:30px}
+.packaging-editorial .quiet-note{max-width:340px;font-size:9px}
+.mini-atelier-stage,.atelier-preview{background:radial-gradient(ellipse at 48% 42%,#fffaf4,#f0e9df 70%,#e8dfd2);color:var(--ink)}
+.mini-atelier-stage>.aura-visual,.atelier-preview>.aura-visual{opacity:.085}
+.mini-atelier-stage>.bracelet-visual{inset:25px 4% 135px;width:92%;height:calc(100% - 160px);filter:drop-shadow(0 14px 12px #35283a16)}
+.mini-atelier-caption{z-index:3;bottom:30px;left:30px;right:30px}
+.mini-atelier-caption>.micro,.preview-top,.preview-bottom .micro{color:#736455}
+.mini-atelier-caption h3{color:var(--ink)}
+.preview-bottom button{border-color:#35283a30}
+.bracelet-preview-orientation{inset:48px 4% 75px;transform:rotate(-4deg)}
+.bracelet-preview-orientation.turned{transform:rotate(5deg) scale(.96)}
+.mini-atelier-caption>span:last-child{color:#736455}
+.toast>.icon-button{display:inline-flex}
+.view-loading{min-height:75svh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:24px;color:var(--mauve)}
+.view-loading .aura-mark{animation:loading-breathe 2s ease-in-out infinite}
+.view-recovery{min-height:80svh;padding-top:180px;padding-bottom:100px;display:flex;flex-direction:column;align-items:flex-start;gap:25px}
+.view-recovery p{color:var(--muted)}
+@keyframes loading-breathe{50%{opacity:.4;transform:scale(.95)}}
+.photographic-bottle{filter:drop-shadow(0 15px 10px #251b2b13)}
+.fragrance-hero-grid{align-items:start;gap:clamp(35px,5vw,80px)}
+.fragrance-art:has(.product-gallery){height:auto;background:none;min-width:0;position:sticky;top:122px}
+.product-gallery{width:100%;min-width:0}
+.gallery-canvas{height:550px;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#ffffff90,transparent 70%),var(--cream)}
+.gallery-object{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.gallery-object>.aura-visual{position:absolute;inset:0;opacity:.3}
+.gallery-object>.bottle{position:relative;width:66%;height:90%;z-index:1;max-width:340px}
+.gallery-view-1 .gallery-object>.aura-visual{opacity:1;inset:5%;width:90%;height:90%}
+.gallery-view-1{background:var(--scent-dark);color:var(--scent-light)}
+.gallery-object>.packaging{height:80%;width:90%}
+.gallery-edition{position:absolute;bottom:22px;left:24px;font-size:8px;z-index:2;color:var(--scent-dark)}
+.gallery-view-1 .gallery-edition{color:var(--scent-light)}
+.gallery-expand{position:absolute;bottom:12px;right:14px;z-index:2;border:1px solid #35283a20;background:#fcf9f580;border-radius:50%;color:var(--ink)}
+.gallery-selectors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:15px}
+.gallery-selectors button{display:flex;flex-direction:column;gap:9px;padding:0;text-align:left;min-width:0;font-size:9px;color:var(--muted)}
+.gallery-thumbnail{display:flex;width:100%;height:88px;align-items:center;justify-content:center;background:var(--cream);border:1px solid transparent;overflow:hidden}
+.gallery-selectors [aria-pressed=true] .gallery-thumbnail{border-color:var(--mauve)}
+.gallery-selectors [aria-pressed=true]{color:var(--ink)}
+.gallery-thumbnail>.bottle{height:80px;width:65px}
+.gallery-thumbnail>.aura-visual{height:100%;width:100%;background:var(--scent-dark)}
+.gallery-thumbnail>.packaging{transform:scale(.24);width:300px;min-width:300px}
+.gallery-lightbox{height:min(80svh,760px);position:relative;background:var(--cream);color:var(--ink);width:100%}
+.gallery-lightbox .gallery-object{bottom:60px}
+.gallery-lightbox>.micro{position:absolute;bottom:28px;left:24px;font-size:8px}
+.gallery-lightbox>.text-link{position:absolute;bottom:24px;right:24px;font-size:9px}
+.modal:has(.gallery-lightbox){padding:40px 24px 24px;max-width:850px}
+.product-details{margin-top:32px;border-top:1px solid var(--line)}
+.product-details details{border-bottom:1px solid var(--line);padding:17px 0}
+.product-details summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;cursor:pointer}
+.product-details summary::-webkit-details-marker{display:none}
+.product-details summary:after{content:'+';font-size:18px;font-weight:300}
+.product-details details[open] summary:after{content:'−'}
+.product-details p{font-size:11px;color:var(--muted);margin-top:12px;max-width:460px}
+.product-details dl{font-size:10px;margin:16px 0 0}
+.product-details dl>div{display:grid;grid-template-columns:110px 1fr;gap:15px;margin-top:8px}
+.product-details dt{color:var(--muted)}
+.product-details dd{margin:0}
+.purchase-dock{position:fixed;bottom:0;left:0;right:0;z-index:45;background:#fcf9f5f5;backdrop-filter:blur(16px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px var(--gutter) max(14px,env(safe-area-inset-bottom));box-shadow:0 -8px 35px #251b2b08;animation:dock-enter .25s var(--ease)}
+.purchase-dock>div{display:flex;gap:24px;align-items:center;font:25px var(--serif)}
+.purchase-dock strong{font:14px var(--sans);white-space:nowrap}
+.purchase-dock small{font-size:9px;color:var(--muted);font-weight:400}
+.purchase-dock .button{min-height:44px;padding:12px 22px}
+@keyframes dock-enter{from{opacity:0;transform:translateY(100%)}to{opacity:1;transform:none}}
+.local-film>.film-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.local-film>video{position:relative;opacity:0;transition:opacity .3s}
+.local-film[data-ready=true]>video{opacity:1}
+@media(max-width:1024px){.gallery-canvas{height:470px}.gallery-thumbnail{height:75px}.gallery-thumbnail>.bottle{height:70px}.purchase-dock>div{font-size:22px}}
+@media(max-width:768px){.fragrance-art:has(.product-gallery){position:relative;top:auto}.gallery-canvas{height:500px}.product-gallery{max-width:620px;margin:auto}.gallery-selectors{gap:10px}.gallery-thumbnail{height:90px}.gallery-thumbnail>.bottle{height:82px}.purchase-dock{gap:12px;padding-inline:22px}.purchase-dock>div{flex-direction:column;gap:1px;align-items:flex-start;font-size:21px}.purchase-dock small{display:none}.purchase-dock .button{font-size:10px;gap:14px}.gallery-lightbox{height:70svh}.product-details{margin-top:25px}}
+@media(max-width:480px){.gallery-canvas{height:400px}.gallery-object>.bottle{width:72%;height:92%}.gallery-thumbnail{height:78px}.gallery-thumbnail>.bottle{height:73px}.gallery-selectors button{font-size:8px}.gallery-edition{font-size:6px;left:17px}.product-details dl>div{grid-template-columns:85px 1fr}.purchase-dock>div{font-size:18px;min-width:0}.purchase-dock>div>span{max-width:175px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.purchase-dock strong{font-size:12px}.purchase-dock .button{font-size:9px;flex-shrink:0;padding:12px 15px}.modal:has(.gallery-lightbox){padding:45px 10px 10px}.gallery-lightbox>.micro{left:12px;font-size:6px}.gallery-lightbox>.text-link{right:12px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.view-loading .aura-mark,.purchase-dock{animation:none}}
+@media(max-width:768px){.packaging-editorial{grid-template-columns:1fr}.packaging-editorial>img{min-height:0;height:auto;aspect-ratio:3/2}.packaging-editorial>div{padding:60px var(--gutter)}.hero-scene-controls{gap:9px}.hero-scene-controls button{font-size:8px}}
+@media(max-width:480px){.hero-bottom{flex-wrap:wrap;gap:14px}.hero-scene-controls{margin-left:auto}.hero-bottom .hero-small{width:100%;text-align:right;font-size:14px}.packaging-editorial h2{font-size:48px}}
+@media(max-width:480px){.mini-atelier-stage>.bracelet-visual{inset:28px 1% 110px;width:98%;height:calc(100% - 138px)}.mini-atelier-caption{left:24px;bottom:24px}.mini-atelier-caption h3{font-size:30px}.mini-atelier-caption>.micro{font-size:7px}.bracelet-preview-orientation{inset:35px 1% 65px}.atelier-preview{height:365px}.preview-top{left:20px;right:20px}}
+@media(prefers-reduced-motion:reduce){.hero[data-scene]>.hero-photo,.hero[data-scene]>.hero-bracelet-photo{transition:none;transform:none}.hero[data-scene="1"]>.hero-bracelet-photo{display:block}.hero[data-scene="0"]>.hero-bracelet-photo{display:none}}
+/* The Mogra preview uses the same neutral product studio as the other scents. */
+.home-personalization .mini-atelier-stage{background:radial-gradient(ellipse at 48% 42%,#fffaf4,#f0e9df 70%,#e8dfd2)}
+.home-personalization .mini-atelier-stage .mini-atelier-caption{color:var(--ink)}
+.home-personalization .mini-atelier-stage .mini-atelier-caption>.micro{color:#806f7b}
+/* Separate the keepsake card from the jewellery; keep the dedication brief. */
+.presentation-memory .presentation-box{left:3%;top:32px;width:57%;height:190px;transform:rotate(-4deg);padding:22px 13px}
+.presentation-memory .presentation-wordmark{font-size:17px}
+.presentation-memory>.bracelet-visual{left:0;right:auto;top:110px;width:65%;height:180px;z-index:2;filter:drop-shadow(3px 7px 5px #251b2b18)}
+.presentation-memory .presentation-note{right:2%;top:77px;width:32%;height:153px;padding:17px 13px;transform:rotate(4deg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid #d6b98935;box-shadow:3px 8px 15px #251b2b12}
+.presentation-memory .presentation-note>.aura-mark{width:19px;height:19px;color:#9b7c5c}
+.presentation-memory .presentation-note>span{font:24px/1.05 var(--serif);margin-top:15px;color:var(--ink)}
+.presentation-memory .presentation-note>small{font-size:5px;letter-spacing:.16em;margin-top:16px;color:#8b7767}
+/* Campaign lettering stays in front of the product, with its own clear footer. */
+.touchpoint-campaign{isolation:isolate}
+.touchpoint-campaign>.aura-visual{z-index:0;pointer-events:none}
+.touchpoint-campaign>.aura-mark,.touchpoint-campaign>strong{position:relative;z-index:3}
+.touchpoint-campaign>strong{font-size:21px;line-height:1.08;max-width:166px}
+.touchpoint-campaign>.bracelet-visual{position:absolute;left:9px;right:9px;bottom:24px;width:calc(100% - 18px);height:112px;z-index:1;opacity:.95}
+.touchpoint-campaign>span{left:17px;right:17px;bottom:13px;z-index:4;background:var(--scent-dark);padding-top:6px;border-top:1px solid #f5ead82e;font-size:6px;line-height:1.4}
+/* Fixed-size mockups must not determine the width of their grid tracks. */
+.touchpoint-grid>div{min-width:0;max-width:100%}
+.touchpoint-art{min-width:0;max-width:100%}
+.touchpoint-caption{min-width:0}
+.touchpoint-four-bottles .bottle{min-width:0;flex:1 1 0}
+@media(max-width:600px){
+ .touchpoint-grid{grid-template-columns:minmax(0,1fr);gap:32px}
+ .touchpoint-art{height:300px;padding:20px}
+ .touchpoint-caption h3{font-size:13px}
+ .touchpoint-caption .micro{font-size:9px}
+ .touchpoint-art>.presentation-mockup{transform:scale(.88)}
+ .touchpoint-art>.packaging{transform:scale(.85)}
+ .touchpoint-four-bottles .bottle{height:235px}
+ .touchpoint-four-cartons>div{height:175px;padding-top:13px}
+ .touchpoint-four-cartons strong{font-size:8px}
+ .touchpoint-four-cartons .aura-visual{height:110px}
+ .touchpoint-four-cartons span{font-size:6px}
+ .touchpoint-four-pods .pod-visual{height:110px}
+ .touchpoint-charms{gap:32px}
+ .touchpoint-charms .charm-glyph{width:48px;height:48px}
+ .touchpoint-campaign{transform:rotate(-4deg)}
+ .touchpoint-art .mock-browser{transform:scale(.9)}
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+scripts/.font-tools/
+
+# Local demo packages and original supplied footage
+deliverables/
+USABLE/
+
+# Generated TypeScript metadata
+*.tsbuildinfo
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.netlify/
+.vercel/
+public/images/video-inspection/

@@ -1,0 +1,194 @@
+[
+  {
+    "source": "/images/products/bracelet-atlas-v3.png",
+    "output": "/images/products/bracelet-atlas-v3.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1856480,
+    "webpBytes": 259926
+  },
+  {
+    "source": "/images/products/bracelet-charm-gold-v2.png",
+    "output": "/images/products/bracelet-charm-gold-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1752850,
+    "webpBytes": 217156
+  },
+  {
+    "source": "/images/products/bracelet-charm-plum-v2.png",
+    "output": "/images/products/bracelet-charm-plum-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1657883,
+    "webpBytes": 165596
+  },
+  {
+    "source": "/images/products/bracelet-charm-silver-v2.png",
+    "output": "/images/products/bracelet-charm-silver-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1682497,
+    "webpBytes": 155916
+  },
+  {
+    "source": "/images/products/bracelet-classic-gold-v2.png",
+    "output": "/images/products/bracelet-classic-gold-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1517799,
+    "webpBytes": 150414
+  },
+  {
+    "source": "/images/products/bracelet-classic-plum-v2.png",
+    "output": "/images/products/bracelet-classic-plum-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1397422,
+    "webpBytes": 103088
+  },
+  {
+    "source": "/images/products/bracelet-classic-silver-v2.png",
+    "output": "/images/products/bracelet-classic-silver-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1408420,
+    "webpBytes": 97088
+  },
+  {
+    "source": "/images/products/bracelet-gold-portrait-v3.png",
+    "output": "/images/products/bracelet-gold-portrait-v3.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1954420,
+    "webpBytes": 253190
+  },
+  {
+    "source": "/images/products/bracelet-gold-v2.png",
+    "output": "/images/products/bracelet-gold-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1584970,
+    "webpBytes": 141682
+  },
+  {
+    "source": "/images/products/bracelet-plum-portrait-v3.png",
+    "output": "/images/products/bracelet-plum-portrait-v3.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1834433,
+    "webpBytes": 194800
+  },
+  {
+    "source": "/images/products/bracelet-plum-v2.png",
+    "output": "/images/products/bracelet-plum-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1517520,
+    "webpBytes": 114004
+  },
+  {
+    "source": "/images/products/bracelet-silver-portrait-v3.png",
+    "output": "/images/products/bracelet-silver-portrait-v3.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1835453,
+    "webpBytes": 199088
+  },
+  {
+    "source": "/images/products/bracelet-silver-v2.png",
+    "output": "/images/products/bracelet-silver-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1479140,
+    "webpBytes": 99926
+  },
+  {
+    "source": "/images/products/kasturi-bottle-v2.png",
+    "output": "/images/products/kasturi-bottle-v2.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1835597,
+    "webpBytes": 183810
+  },
+  {
+    "source": "/images/products/mitti-bottle-v2.png",
+    "output": "/images/products/mitti-bottle-v2.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1804205,
+    "webpBytes": 175908
+  },
+  {
+    "source": "/images/products/mogra-bottle-v2.png",
+    "output": "/images/products/mogra-bottle-v2.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1787645,
+    "webpBytes": 178924
+  },
+  {
+    "source": "/images/products/sandalwood-bottle-v2.png",
+    "output": "/images/products/sandalwood-bottle-v2.webp",
+    "width": 1024,
+    "height": 1536,
+    "originalBytes": 1764033,
+    "webpBytes": 172350
+  },
+  {
+    "source": "/images/hero-campaign.png",
+    "output": "/images/hero-campaign.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1783780,
+    "webpBytes": 82798
+  },
+  {
+    "source": "/images/aurawear-campaign.png",
+    "output": "/images/aurawear-campaign.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1801146,
+    "webpBytes": 87340
+  },
+  {
+    "source": "/images/starter-presentation-v2.png",
+    "output": "/images/starter-presentation-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3085903,
+    "webpBytes": 346726
+  },
+  {
+    "source": "/images/aurawear-lifestyle-v2.png",
+    "output": "/images/aurawear-lifestyle-v2.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2295433,
+    "webpBytes": 186448
+  },
+  {
+    "source": "/images/aurawear-campaign-v3.png",
+    "output": "/images/aurawear-campaign-v3.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 1824512,
+    "webpBytes": 119108
+  },
+  {
+    "source": "/images/aurawear-lifestyle-v3.png",
+    "output": "/images/aurawear-lifestyle-v3.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2314278,
+    "webpBytes": 200768
+  },
+  {
+    "source": "/images/starter-presentation-v3.png",
+    "output": "/images/starter-presentation-v3.webp",
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2944484,
+    "webpBytes": 308756
+  }
+]

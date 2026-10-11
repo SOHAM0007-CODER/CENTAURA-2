@@ -1,0 +1,23 @@
+.bracelet-presets{margin-bottom:35px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.bracelet-presets-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:18px}
+.bracelet-presets-heading h2{font:30px/1.05 var(--serif);margin-top:8px;letter-spacing:-.02em}
+.bracelet-surprise{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex-shrink:0;border:1px solid var(--line);padding:10px 12px;font-size:10px;color:var(--ink);background:transparent;transition:background .2s,border-color .2s}
+.bracelet-surprise:hover{background:var(--cream);border-color:var(--mauve)}
+.bracelet-presets-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.bracelet-preset{display:flex;flex-direction:column;text-align:left;border:1px solid var(--line);background:var(--paper);padding:0;position:relative;overflow:hidden;transition:border-color .2s,background .2s}
+.bracelet-preset:hover{border-color:var(--mauve)}
+.bracelet-preset.selected{border-color:var(--mauve);background:#f2edf1}
+.bracelet-preset-art{height:132px;background:linear-gradient(145deg,#eee8dd,#faf7f1);display:flex;align-items:center;justify-content:center;width:100%}
+.bracelet-preset-art>.bracelet-visual{width:100%;height:100%;max-width:210px;pointer-events:none}
+.bracelet-preset-copy{display:flex;flex-direction:column;gap:5px;padding:13px 13px 10px;width:100%}
+.bracelet-preset-copy>strong{font:24px/1.1 var(--serif);letter-spacing:-.01em}
+.bracelet-preset-copy>span{font-size:9px;line-height:1.45;color:var(--muted)}
+.bracelet-preset-copy>small{font-size:9px;line-height:1.6;color:var(--ink);margin-top:3px}
+.bracelet-preset-price{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;padding:0 13px 13px;font-size:11px;margin-top:auto}
+.bracelet-preset-price>small{font-size:8px;color:var(--muted)}
+.bracelet-preset-tick{position:absolute;right:9px;top:9px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--plum);color:var(--paper)}
+.bracelet-presets-note{font-size:10px;color:var(--muted);line-height:1.7;margin-top:14px}
+.mini-curated-choice{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:22px;margin-bottom:2px}
+.mini-curated-choice>span{font-size:10px;color:var(--muted)}
+.mini-atelier-caption>span:last-child{line-height:1.6;max-width:100%}
+@media(max-width:480px){.bracelet-presets-heading{gap:12px;align-items:center}.bracelet-presets-heading h2{font-size:27px}.bracelet-presets-heading .eyebrow{font-size:8px}.bracelet-surprise{font-size:9px;padding:9px 10px}.bracelet-presets-grid{gap:10px}.bracelet-preset-art{height:118px}.bracelet-preset-copy{padding:11px 10px 8px}.bracelet-preset-copy>strong{font-size:22px}.bracelet-preset-copy>span{font-size:8px}.bracelet-preset-copy>small{font-size:8px}.bracelet-preset-price{padding:0 10px 11px;font-size:10px}.bracelet-preset-price>small{font-size:7px}}

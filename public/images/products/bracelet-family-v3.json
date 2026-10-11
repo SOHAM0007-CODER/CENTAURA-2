@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "imageSize": { "width": 1024, "height": 1536 },
+  "images": {
+    "gold": "bracelet-gold-portrait-v3.webp",
+    "silver": "bracelet-silver-portrait-v3.webp",
+    "plum": "bracelet-plum-portrait-v3.webp"
+  },
+  "styles": {
+    "classic": { "cropY": 0, "cropHeight": 530, "capsule": { "x": 378, "y": 62, "width": 265 } },
+    "signature": { "cropY": 530, "cropHeight": 530, "capsule": { "x": 374, "y": 568, "width": 265 } },
+    "charm": { "cropY": 1050, "cropHeight": 530, "capsule": { "x": 378, "y": 1084, "width": 265 } }
+  },
+  "note": "Transparent product concept photographs. Refilling, materials and fragrance performance require physical prototyping."
+}

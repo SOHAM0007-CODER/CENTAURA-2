@@ -1,0 +1,10 @@
+/* Shared jewellery rendering only; page stage composition is in polish.css. */
+.bracelet-visual { overflow:hidden; isolation:isolate; }
+.bracelet-visual .pod-fitting { transition:transform .65s cubic-bezier(.22,1,.36,1); }
+.bracelet-visual .attached-jewellery { width:34px; height:34px; overflow:visible; }
+.bracelet-visual .attached-charm { filter:drop-shadow(.5px 1.2px 1px #372b351c); }
+.charm-glyph { display:block; flex-shrink:0; }
+.charm-sculpture { filter:drop-shadow(.2px .6px .3px #33253220); }
+.mini-charm-options .charm-glyph { width:26px; height:26px; }
+.charm-options .charm-glyph { width:48px; height:48px; margin-inline:auto; }
+@media(prefers-reduced-motion:reduce){ .bracelet-visual .pod-fitting { transition:none; } }

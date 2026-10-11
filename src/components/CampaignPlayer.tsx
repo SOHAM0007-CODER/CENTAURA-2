@@ -1,0 +1,15 @@
+import { useEffect, useRef, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import { Pause, Play } from 'lucide-react';
+import { fragrances } from '../data';
+import { defaultConfig } from '../wearables';
+import { Aura, Bottle, Mark, scentStyle } from './Visuals';
+import { BraceletVisual, PodVisual } from './WearableVisuals';
+const chapters=['See the feeling','Discover the fragrance','Carry it in an AuraPod','Wear your aura','Make it yours','Your scent. Your story. Your aura.'];
+export function CampaignPlayer(){
+ const [scent,setScent]=useState(fragrances[0]),[chapter,setChapter]=useState(0),[playing,setPlaying]=useState(false),[visible,setVisible]=useState(false);const ref=useRef<HTMLDivElement>(null);const reduced=useReducedMotion();
+ useEffect(()=>{const el=ref.current;if(!el)return;const observer=new IntersectionObserver(([e])=>setVisible(e.isIntersecting),{threshold:.2});observer.observe(el);return()=>observer.disconnect();},[]);
+ useEffect(()=>{if(!playing||!visible)return;const tick=setInterval(()=>{if(!document.hidden)setChapter(old=>(old+1)%chapters.length);},2400);return()=>clearInterval(tick);},[playing,visible]);
+ const config={...defaultConfig,fragrance:scent.id,charms:chapter>=4?['moon','star','aura'] as const:[]};
+ return <div className="brand-film" ref={ref} style={scentStyle(scent)}><div className="brand-film-top"><Mark/><span className="micro">CENTAURA / THE CAMPAIGN STUDY</span><span className="micro">0{chapter+1} / 06</span></div><div className="brand-film-stage"><Aura scent={scent} dimension={playing&&!reduced?'Motion':'Form'}/><AnimatePresence mode="wait"><motion.div className={`brand-film-object chapter-${chapter}`} key={chapter} initial={reduced?false:{opacity:0,y:12}} animate={{opacity:1,y:0}} exit={{opacity:0}} transition={{duration:.45}}>{chapter===0?<Mark/>:chapter===1?<Bottle scent={scent}/>:chapter===2?<PodVisual scent={scent}/>:chapter<5?<BraceletVisual config={{...config,charms:[...config.charms]}}/>:<div className="brand-film-pair"><Bottle scent={scent}/><BraceletVisual config={{...config,charms:[...config.charms]}}/></div>}</motion.div></AnimatePresence><h3>{chapters[chapter]}</h3><p>{scent.name} · {scent.aura}</p></div><div className="brand-film-bottom"><button className="film-play" aria-label={playing?'Pause brand film':'Play brand film'} onClick={()=>setPlaying(!playing)}>{playing?<Pause size={18}/>:<Play size={18}/>}</button><span className="micro">{playing?'PAUSE':'PLAY'} / A SILENT BRAND STORY</span><div className="brand-film-chapters" role="group" aria-label="Campaign chapters">{chapters.map((name,i)=><button key={name} aria-label={name} aria-pressed={chapter===i} className={chapter===i?'selected':''} onClick={()=>{setChapter(i);setPlaying(false);}}/>)}</div></div><div className="brand-film-scents" role="group" aria-label="Campaign fragrance">{fragrances.map(s=><button key={s.id} aria-pressed={s.id===scent.id} className={s.id===scent.id?'selected':''} onClick={()=>setScent(s)}>{s.name}</button>)}</div></div>;
+}

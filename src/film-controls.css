@@ -1,0 +1,63 @@
+.local-film > .local-film-control {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0;
+  gap: 0;
+  border: 1px solid rgba(255, 250, 240, .8);
+  border-radius: 50%;
+  background: rgba(250, 244, 232, .88);
+  color: #2c2522;
+  box-shadow: 0 3px 16px rgba(23, 17, 13, .18), inset 0 1px 0 rgba(255, 255, 255, .45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.local-film > .local-film-control > svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.local-film > .local-film-control > .lucide-play {
+  margin-left: 2px;
+}
+
+@media (hover: hover) {
+  .local-film > .local-film-control:hover {
+    background: rgba(255, 251, 242, .98);
+    box-shadow: 0 5px 22px rgba(23, 17, 13, .24);
+    transform: translateY(-1px);
+  }
+}
+
+.local-film > .local-film-control:focus-visible {
+  outline: 2px solid #2c2522;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(255, 250, 240, .95);
+}
+
+.local-film > .local-film-control:active {
+  transform: scale(.96);
+}
+
+@media (max-width: 480px) {
+  .local-film > .local-film-control {
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .local-film > .local-film-control {
+    transition: none;
+  }
+}

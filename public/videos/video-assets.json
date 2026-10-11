@@ -1,0 +1,67 @@
+[
+  {
+    "id": "kasturi",
+    "source": "Creating_fragrance_identity_film_1080p_20261011101131.mp4",
+    "video": "/videos/kasturi.mp4",
+    "poster": "/images/kasturi-poster.jpg",
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "audio": false,
+    "coreFragrance": true,
+    "note": "Visual identity match confirmed from extracted frames. Small white diamond mark at bottom right is part of supplied film."
+  },
+  {
+    "id": "mogra",
+    "source": "Creating_fragrance_identity_film_20261011102113.mp4",
+    "video": "/videos/mogra.mp4",
+    "poster": "/images/mogra-poster.jpg",
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "audio": false,
+    "coreFragrance": true,
+    "note": "Visual identity match confirmed from extracted frames. Small white diamond mark at bottom right is part of supplied film."
+  },
+  {
+    "id": "sandalwood",
+    "source": "Fragrance_film_abstract_lines_cr…_20261011101718.mp4",
+    "video": "/videos/sandalwood.mp4",
+    "poster": "/images/sandalwood-poster.jpg",
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "audio": false,
+    "coreFragrance": true,
+    "note": "Visual identity match confirmed from extracted frames. Small white diamond mark at bottom right is part of supplied film."
+  },
+  {
+    "id": "mitti",
+    "source": "Fragrance_identity_film_creation_20261011101410.mp4",
+    "video": "/videos/mitti.mp4",
+    "poster": "/images/mitti-poster.jpg",
+    "duration": 8.0,
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "audio": false,
+    "coreFragrance": true,
+    "note": "Visual identity match confirmed from extracted frames. Small white diamond mark at bottom right is part of supplied film."
+  },
+  {
+    "id": "campaign",
+    "source": "Perfume_advertisement_featuring_…_1080p_20261011100735.mp4",
+    "video": "/videos/campaign.mp4",
+    "poster": "/images/campaign-poster.jpg",
+    "duration": 8.0,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "audio": false,
+    "coreFragrance": false,
+    "note": "Generic perfume advertisement ends in pink rose imagery. Use only as conceptual campaign film; do not imply a rose variant or source this as Mogra."
+  }
+]
