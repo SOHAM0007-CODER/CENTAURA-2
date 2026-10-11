@@ -58,7 +58,7 @@ export function AuraGuide() {
   return <aside className={`aura-guide ${open ? 'is-open' : ''} ${hidden ? 'is-paused' : ''}`} aria-label="CENTAURA fragrance guide">
     {open && <section id="aura-guide-panel" className="aura-guide-panel" role="dialog" aria-labelledby="aura-guide-title">
       <header className="aura-guide-heading">
-        <img src="/images/aura-guide.jpg" alt="" width="64" height="64" />
+        <img src="/images/aura-guide-transparent.png" alt="" width="64" height="64" />
         <div><span className="aura-guide-kicker">A LITTLE HELP FROM THE HOUSE</span><h2 id="aura-guide-title">Your Aura Guide</h2><p>A feeling. A fragrance. A little guidance.</p></div>
         <button ref={closer} type="button" className="aura-guide-close" aria-label="Close Aura Guide" onClick={close}><X size={18} /></button>
       </header>
@@ -75,7 +75,7 @@ export function AuraGuide() {
       <div className="aura-guide-topics" aria-label="Questions you can ask"><span className="aura-guide-kicker">WHAT WOULD YOU LIKE TO KNOW?</span><div>{topics.map(topic => <button type="button" key={topic.id} onClick={() => ask(topic)}>{topic.question}</button>)}</div></div>
     </section>}
     <button ref={launcher} type="button" className="aura-guide-launcher" aria-label={open ? 'Close Aura Guide' : 'Open Aura Guide — fragrance questions'} aria-expanded={open} aria-controls="aura-guide-panel" onClick={() => open ? close() : setOpen(true)}>
-      <span className="aura-guide-mascot"><img src="/images/aura-guide.jpg" alt="" width="88" height="88" /></span>
+      <span className="aura-guide-mascot"><img src="/images/aura-guide-transparent.png" alt="" width="88" height="88" /></span>
       <span className="aura-guide-label">Aura Guide</span>
     </button>
   </aside>;
